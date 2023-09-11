@@ -31,10 +31,10 @@ class ManaRestore(Spell):
         return 0
 
     def restore_mana(self):
-        return "\nPlayer restores mana."
+        return "\nPlayer restores 10 mana."
 
 class NecroticBlast(Spell):
-    def __init__(self, name='Necroticblast', min_damage=3, max_damage=6, mana_cost=4, lifesteal=True, **kwargs) -> None:
+    def __init__(self, name='Necroticblast', min_damage=4, max_damage=10, mana_cost=4, lifesteal=True, **kwargs) -> None:
         super().__init__(name, min_damage, max_damage, mana_cost, lifesteal, **kwargs)
 
 class Frostbolt(Spell):
